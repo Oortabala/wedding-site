@@ -1,6 +1,7 @@
 import { Countdown } from "@/components/Countdown";
 import { EventDay } from "@/components/EventDay";
 import { FinalBlock } from "@/components/FinalBlock";
+import { Gallery } from "@/components/Gallery";
 import { Hero } from "@/components/Hero";
 import { Invitation } from "@/components/Invitation";
 import { MobileMenu } from "@/components/MobileMenu";
@@ -18,6 +19,7 @@ export default function Home() {
       <Countdown />
       <Venue />
       <Timeline />
+      <Gallery />
       <RSVP />
       <FinalBlock />
     </main>

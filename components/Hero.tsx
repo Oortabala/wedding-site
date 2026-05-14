@@ -80,7 +80,7 @@ export function Hero() {
           transition={{ duration: 0.9, delay: 0.15 }}
         >
           {wedding.couple.groom}
-          <span className="block text-4xl text-[#C9A76A]">&</span>
+          <span className="block text-4xl text-[#C9A76A]"> & </span>
           {wedding.couple.bride}
         </motion.h1>
 

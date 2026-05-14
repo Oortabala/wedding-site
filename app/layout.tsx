@@ -15,7 +15,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Олжас & Айтолқын",
-  description: "Беташар және үйлену той",
+  description: "Үйлену той",
 };
 
 export default function RootLayout({

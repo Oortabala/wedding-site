@@ -6,7 +6,7 @@ export const wedding = {
   },
 
   event: {
-    type: "Беташар және үйлену той",
+    type: "Үйлену той",
     date: "2026-06-13T18:00:00",
     displayDate: "13 маусым 2026",
     day: "13",
@@ -19,14 +19,14 @@ export const wedding = {
   invitation: {
     greeting: "Құрметті ағайын-туыс, құда-жекжат, дос-жаран!",
     text: "Сіздерді Олжас пен Айтолқынның үйлену тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз.",
-    from: "Ізгі ниетпен: Дәулет & Перизат",
+    from: "Ізгі ниетпен: Даулет & Перизат",
   },
 
   venue: {
     name: "Shymkent Hall",
-    address: "Шымкент қ., ...",
-    gisLink: "https://2gis.kz/",
-    googleMapsLink: "https://maps.google.com/",
+    address: "Шымкент қ., Проспект Байдибек би, 246/3",
+    gisLink: "https://go.2gis.com/BSofa",
+    googleMapsLink: "https://maps.app.goo.gl/zKW7xbAaPA2VETiB9",
   },
 
   timeline: [
@@ -38,7 +38,7 @@ export const wedding = {
   ],
 
   images: {
-    couple: "/images/olzhas-aitolkyn/couple.webp",
+    couple: "/images/olzhas-aitolkyn/couple-1.webp",
     petals: "/images/olzhas-aitolkyn/petals.webp",
     birds: "/images/olzhas-aitolkyn/birds.webp",
   },

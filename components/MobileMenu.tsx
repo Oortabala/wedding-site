@@ -1,7 +1,7 @@
 "use client";
 
-import { Menu, Music2, X } from "lucide-react";
-import { useState } from "react";
+import { Menu, Music2, Pause, X } from "lucide-react";
+import { useRef, useState } from "react";
 
 const menuItems = [
   { label: "Бастапқы бет", href: "#home" },
@@ -15,16 +15,40 @@ const menuItems = [
 
 export function MobileMenu() {
   const [open, setOpen] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  const toggleMusic = async () => {
+    const audio = audioRef.current;
+
+    if (!audio) return;
+
+    try {
+      if (isPlaying) {
+        audio.pause();
+        setIsPlaying(false);
+      } else {
+        audio.volume = 0.45;
+        await audio.play();
+        setIsPlaying(true);
+      }
+    } catch (error) {
+      console.error("Music playback blocked:", error);
+    }
+  };
 
   return (
     <>
+      <audio ref={audioRef} src="/audio/wedding-music.mp3" loop preload="auto" />
+
       <div className="fixed left-0 right-0 top-0 z-50 flex items-center justify-between px-5 py-4">
         <button
           type="button"
+          onClick={toggleMusic}
           className="flex h-11 w-11 items-center justify-center rounded-full bg-white/80 text-[#2B2118] shadow-sm backdrop-blur"
           aria-label="Музыка"
         >
-          <Music2 size={18} />
+          {isPlaying ? <Pause size={18} /> : <Music2 size={18} />}
         </button>
 
         <button

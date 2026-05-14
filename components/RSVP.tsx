@@ -29,7 +29,7 @@ export function RSVP() {
             title="RSVP form"
             className="rounded-[1.5rem] bg-transparent"
           >
-            Loading…
+            Жүктеу…
           </iframe>
         </div>
 
