@@ -1,9 +1,7 @@
-import { Countdown } from "@/components/Countdown";
-import { EventDay } from "@/components/EventDay";
+import { DateBlock } from "@/components/DateBlock";
 import { FinalBlock } from "@/components/FinalBlock";
 import { Hero } from "@/components/Hero";
 import { Invitation } from "@/components/Invitation";
-import { MobileMenu } from "@/components/MobileMenu";
 import { RSVP } from "@/components/RSVP";
 import { Timeline } from "@/components/Timeline";
 import { Venue } from "@/components/Venue";
@@ -11,11 +9,9 @@ import { Venue } from "@/components/Venue";
 export default function Home() {
   return (
     <main>
-      <MobileMenu />
       <Hero />
       <Invitation />
-      <EventDay />
-      <Countdown />
+      <DateBlock />
       <Venue />
       <Timeline />
       <RSVP />
