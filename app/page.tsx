@@ -6,7 +6,6 @@ import { Hero } from "@/components/Hero";
 import { Invitation } from "@/components/Invitation";
 import { MobileMenu } from "@/components/MobileMenu";
 import { RSVP } from "@/components/RSVP";
-import { Timeline } from "@/components/Timeline";
 import { Venue } from "@/components/Venue";
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
       <EventDay />
       <Countdown />
       <Venue />
-      <Timeline />
       <Gallery />
       <RSVP />
       <FinalBlock />

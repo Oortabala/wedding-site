@@ -34,9 +34,9 @@ export function EventDay() {
           <div className="rounded-3xl bg-[#FAF7F2] p-6">
             <CalendarDays className="mx-auto mb-4 text-[#C9A76A]" />
             <p className="mb-2 text-xs uppercase tracking-[0.2em] text-[#9A7A45]">
-              Салтанат
+              Жыл
             </p>
-            <p className="font-serif text-2xl">Той</p>
+            <p className="font-serif text-2xl">2026</p>
           </div>
         </div>
       </AnimatedSection>

@@ -4,7 +4,14 @@ import { useEffect, useState } from "react";
 import { wedding } from "@/data/wedding";
 import { AnimatedSection } from "./AnimatedSection";
 
-function getTimeLeft() {
+type TimeLeft = {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+};
+
+function getTimeLeft(): TimeLeft {
   const target = new Date(wedding.event.date).getTime();
   const now = new Date().getTime();
   const difference = Math.max(target - now, 0);
@@ -18,9 +25,18 @@ function getTimeLeft() {
 }
 
 export function Countdown() {
-  const [timeLeft, setTimeLeft] = useState(getTimeLeft());
+  const [mounted, setMounted] = useState(false);
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
   useEffect(() => {
+    setMounted(true);
+    setTimeLeft(getTimeLeft());
+
     const timer = setInterval(() => {
       setTimeLeft(getTimeLeft());
     }, 1000);
@@ -44,10 +60,14 @@ export function Countdown() {
 
         <div className="grid grid-cols-2 gap-4">
           {items.map((item) => (
-            <div key={item.label} className="rounded-[2rem] bg-white p-6 shadow-sm">
+            <div
+              key={item.label}
+              className="rounded-[2rem] bg-white p-6 shadow-sm"
+            >
               <p className="mb-2 font-serif text-5xl text-[#2B2118]">
-                {String(item.value).padStart(2, "0")}
+                {mounted ? String(item.value).padStart(2, "0") : "00"}
               </p>
+
               <p className="text-xs uppercase tracking-[0.25em] text-[#9A7A45]">
                 {item.label}
               </p>

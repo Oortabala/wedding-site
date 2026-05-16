@@ -13,7 +13,7 @@ export function Invitation() {
           {wedding.invitation.greeting}
         </h2>
 
-        <p className="mb-8 text-lg leading-8 text-[#5F5143]">
+        <p className="mb-8 font-serif text-lg leading-8 text-[#5F5143]">
           {wedding.invitation.text}
         </p>
 

@@ -4,7 +4,7 @@ import { AnimatedSection } from "./AnimatedSection";
 
 export function Venue() {
   return (
-    <section className="bg-[#FAF7F2] px-6 py-24 text-[#2B2118]">
+    <section id="venue" className="bg-[#FAF7F2] px-6 py-24 text-[#2B2118]">
       <AnimatedSection className="mx-auto max-w-4xl text-center">
         <p className="mb-6 text-sm uppercase tracking-[0.3em] text-[#9A7A45]">
           Мекенжай

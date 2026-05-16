@@ -3,9 +3,10 @@ import { AnimatedSection } from "./AnimatedSection";
 
 const photos = [
   "/images/olzhas-aitolkyn/couple.webp",
-  "/images/olzhas-aitolkyn/couple.webp",
-  "/images/olzhas-aitolkyn/couple.webp",
-  "/images/olzhas-aitolkyn/couple.webp",
+  "/images/olzhas-aitolkyn/foto-1.webp",
+  "/images/olzhas-aitolkyn/foto-2.webp",
+  "/images/olzhas-aitolkyn/foto-3.webp",
+  "/images/olzhas-aitolkyn/foto-4.webp",
 ];
 
 export function Gallery() {

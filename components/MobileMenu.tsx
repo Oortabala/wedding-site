@@ -6,7 +6,6 @@ import { useRef, useState } from "react";
 const menuItems = [
   { label: "Бастапқы бет", href: "#home" },
   { label: "Шақыру", href: "#invitation" },
-  { label: "Той күні", href: "#event-day" },
   { label: "Таймер", href: "#countdown" },
   { label: "Мекен-жай", href: "#venue" },
   { label: "Фотоальбом", href: "#gallery" },
